@@ -1,4 +1,9 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  font-family: 'roboto',  Verdana, sans-serif;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
-

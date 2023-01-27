@@ -1,16 +1,17 @@
 import React from 'react';
-import info from "./../db/testimonials.json";
+import styles from './Testimonials.module.scss'
+import info from "../db/testimonials.json";
 
-function testimonials() {
+function Testimonials() {
     return (
         <>
         {info.map((testimonial) => {
-            return  <div key={testimonial.id}>
-                        <img src={testimonial.url} alt={testimonial.alt_img} />
+            return  <div key={testimonial.id} /* className={styles.container} */>
+                        <img src={testimonial.img} alt={testimonial.alt_img} />
                         <button> pasar </button>
-                        <p> {testimonial.info} </p>
-                        <p> {testimonial.name} </p>
-                        <p> {testimonial.profession} </p>
+                        <p /* className={styles.bio} */> {testimonial.info} </p>
+                        <h3 /* className={styles.name} */> {testimonial.name} </h3>
+                        <h4 /* className={styles.profession} */> {testimonial.profession} </h4>
                     </div>
                     })
         }
@@ -18,4 +19,4 @@ function testimonials() {
     )
 }
 
-export default testimonials
+export default Testimonials
