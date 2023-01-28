@@ -14,6 +14,14 @@
     "profession": "Junior Front-end Developer",
     "img": "/image-John.jpg",
     "alt_img": "foto de perfil"
+    },
+    {   
+    "id": 3,
+    "info": " “ I am passionate about what I do, I seek to add value and solve the problems that arise. I am a person with a great sense of responsibility, with initiative, self-taught and decisive. ” ",
+    "name": "Jesica Muñoz",
+    "profession": "Front-end Developer",
+    "img": "/image-jesy.jpg",
+    "alt_img": "foto de perfil"
     }
     
 
