@@ -1,20 +1,36 @@
 .testimonials {
-    width: 100%;
+    max-width: 1440px;
+
 }
 
 .container {
+    //max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //width: 100%;
-    margin: 20px;
+    margin: 60px 10px 60px 10px;
 }
 
+.img_container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+//estilos img container
 img {
     width: 70%;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);
+    //background-image: <svg xmlns="http://www.w3.org/2000/svg" width="697" height="657" className={styles.img_background}><defs><linearGradient id="a" x1="31.368%" x2="100%" y1="70.497%" y2="22.772%"><stop offset="0%" stop-color="#9975D0"/><stop offset="100%" stop-color="#4A3FDB"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" d="M233.996 231.082c-62.714 60.37 48.746 169.37 176.07 259.677 127.324 90.307 187.825 151.88 269.763 73.005 81.938-78.874 114.518-247.228 0-332.682-114.518-85.453-383.12-60.369-445.833 0z" transform="matrix(0 1 1 0 97 -97)"/><path fill="#F4F4FC" d="M14.885 304.531c-51.873-49.833 40.32-139.81 145.634-214.355C265.833 15.63 315.877-35.197 383.651 29.912c67.774 65.108 94.722 204.08 0 274.62-94.722 70.539-316.893 49.832-368.766 0z"/><g stroke="#D3629D" stroke-width="4"><path d="M344 45.087L364.087 25l20.088 20.087L404.262 25l20.088 20.087L444.437 25"/><path d="M344 63.087L364.087 43l20.088 20.087L404.262 43l20.088 20.087L444.437 43"/><path d="M344 81.087L364.087 61l20.088 20.087L404.262 61l20.088 20.087L444.437 61"/><path d="M344 99.087L364.087 79l20.088 20.087L404.262 79l20.088 20.087L444.437 79"/></g><path fill="#CF6BCB" d="M667 640a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm0-22a3 3 0 110 6 3 3 0 010-6zm176 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm0-22a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm-176 0a3 3 0 110 6 3 3 0 010-6zm22-22a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm-176 0a3 3 0 110 6 3 3 0 010-6z"/></g></svg>;
 }
 
 .portrait{
@@ -28,23 +44,123 @@ img {
 .nav_button{
     position: absolute;
     bottom: -20px;
-    
+    background-color: transparent;
 }
 
+
+//estilos info container
 p {
     margin: 60px 10px 10px 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #242136;
+}
+
+.personal_data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 .name {
     color: #242136;
-    margin-top: 10px;
     font-weight: 700;
+    text-align: center;
+    font-size: 16px;
 }
 
 .profession {
     margin-top: 3px;
     opacity: 0.2;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
 } 
+
+//background image
+.img_background{
+    //width: 200px;
+    //height: 300px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+//quatetion marks
+.img_marks{
+    position: absolute;
+    top: -15px;
+    left: 40%;
+    z-index: -1;
+}
+
+//media query 
+
+@media (min-width:768px){
+    .img_container{
+        width: 60%;
+    }
+    .info_container{
+        width: 70%;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row-reverse;
+        position: relative;
+        justify-content: space-between;
+    }
+    .img_container {
+        width: 50%;
+    }
+    .info_container{
+        width: 50%;
+        position: absolute;
+        left: 100px;
+    }
+    .nav_button{
+        left: 100px;
+    }
+    .personal_data{
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    p{
+        text-align: left;
+        margin: 0;
+        font-size: 22px;
+    }
+    .name{
+        font-size: 18px;
+    }
+    .profession{
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .info_container{
+        left: 220px;
+        width: 45%;
+    }
+    .nav_button{
+        left: 200px;
+    }
+    p{
+        font-size: 26px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .profession{
+        font-size: 22px;
+    }
+
+}
