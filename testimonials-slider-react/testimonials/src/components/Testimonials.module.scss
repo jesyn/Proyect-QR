@@ -1,3 +1,6 @@
+$DarkBlue: hsl(240, 38%, 20%);
+$GrayisBlue: hsl(240, 18%, 77%);
+
 .testimonials {
     max-width: 1024px;
     margin: 0 auto;
@@ -9,6 +12,7 @@
     justify-content: center;
     align-items: center;
     margin: 60px 10px 60px 10px;
+    gap: 20px;
 }
 
 .img_container {
@@ -24,7 +28,7 @@
     position: relative;
 }
 
-//estilos img container
+//img container styles
 img {
     width: 70%;
     border-radius: 10px;
@@ -47,12 +51,12 @@ img {
 }
 
 
-//estilos info container
+//info container styles
 p {
     margin: 60px 10px 10px 10px;
     text-align: center;
     font-size: 15px;
-    color: #242136;
+    color: $DarkBlue;
 
 }
 
@@ -63,7 +67,7 @@ p {
 }
 
 .name {
-    color: #242136;
+    color: $DarkBlue;
     font-weight: 700;
     text-align: center;
     font-size: 16px;
@@ -71,34 +75,17 @@ p {
 
 .profession {
     margin-top: 3px;
-    opacity: 0.2;
+    color: $GrayisBlue;
     text-align: center;
     font-weight: 500;
     font-size: 14px;
 } 
 
-//background image
-.img_background{
-    //width: 200px;
-    //height: 300px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
-
-//quatetion marks
-.img_marks{
-    position: absolute;
-    top: -15px;
-    left: 40%;
-    z-index: -1;
-}
 
 //media query 
-
 @media (min-width:768px){
     .img_container{
-        width: 60%;
+        width: 50%;
     }
     .info_container{
         width: 70%;
@@ -113,6 +100,7 @@ p {
         flex-direction: row-reverse;
         position: relative;
         justify-content: space-between;
+        margin: 120px 10px 60px 10px;
     }
     .img_container {
         width: 50%;
@@ -120,7 +108,8 @@ p {
     .info_container{
         width: 50%;
         position: absolute;
-        left: 100px;
+        left: 135px;
+        margin-top: 60px;
     }
     .nav_button{
         left: 100px;
@@ -134,13 +123,13 @@ p {
     p{
         text-align: left;
         margin: 0;
-        font-size: 26px;
+        font-size: 24px;
     }
     .name{
-        font-size: 28px;
+        font-size: 22px;
     }
     .profession{
-        font-size: 28px;
+        font-size: 22px;
     }
 
 }

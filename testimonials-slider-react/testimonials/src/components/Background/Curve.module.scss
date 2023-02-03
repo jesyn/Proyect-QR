@@ -1,0 +1,17 @@
+@media (min-width: 1024px){
+    .curve_container{
+        position: absolute;
+        z-index: -1;
+    }
+    .img_curve {
+        width: 500px;
+        height: 200px;
+        background-image: url("./../../../public/pattern-curve.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        position: relative;
+        bottom: 1.5rem;
+    }
+
+}
